@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 LINEWIDTH = 80
 COLORIZED = True
@@ -7,6 +7,10 @@ import os
 import shlex
 import subprocess
 import sys
+try:
+    from shlex import quote
+except ImportError:
+    from pipes import quote
 
 def main():
     # Store arguments
@@ -16,7 +20,7 @@ def main():
 
     # Run test and save results
     with open(logfile, 'w') as f:
-        cmd = ' '.join(map(shlex.quote, cmds))
+        cmd = ' '.join(map(quote, cmds))
         f.write("# Command executed: ")
         f.write(cmd)
         f.write('\n')
