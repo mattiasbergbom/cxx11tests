@@ -43,18 +43,18 @@ class MakefileGen:
         self.create_makefile_targets()
         self.create_makefile_footer()
         self.write_makefile()
-        print "Done."
+        print("Done.")
 
     def clean_build_directory(self):
         if os.path.isdir(self.build_dir):
             shutil.rmtree(self.build_dir)
-        print "Existing build directory removed."
+        print("Existing build directory removed.")
 
     def scan_source_directory(self):
         self.files = [f for f in sorted(os.listdir(self.source_dir)) if
                           os.path.splitext(f)[1] == '.' + self.extension]
         self.tests = [x[:-(len(self.extension)+1)] for x in self.files]
-        print "Source directory scanned for test files."
+        print("Source directory scanned for test files.")
 
     def create_makefile_header(self):
         self.makefile_header = []
@@ -101,7 +101,7 @@ class MakefileGen:
         # Enable colors by default
         self.makefile_header.append("export COLORIZED ?= 1")
         
-        print "Makefile header generated."
+        print("Makefile header generated.")
 
     def create_makefile_targets(self):
         # Add default target
@@ -163,10 +163,10 @@ class MakefileGen:
         for t in self.tests:
             self.makefile_targets.append("\t@echo '  {}'".format(t))
 
-        print "Makefile targets generated."
+        print("Makefile targets generated.")
 
     def create_makefile_footer(self):
-        print "Maekfile footer generated."
+        print("Maekfile footer generated.")
 
     def write_makefile(self):
         self.makefile = 'Makefile'
@@ -178,7 +178,7 @@ class MakefileGen:
             f.write('\n'.join(self.makefile_footer))
             f.write('\n')
 
-        print "Makefile written to disk."
+        print("Makefile written to disk.")
 
 
 if __name__ == '__main__':
