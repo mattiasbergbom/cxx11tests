@@ -85,6 +85,7 @@ In order to run the iOS port of the tests, these are the additional requirements
 
 *   Xcode >= 5
 *   Xcode commandline tools
+*   Xcode developer certificates (see https://developer.apple.com/support/technical/certificates/)
 
 Usage
 -----
