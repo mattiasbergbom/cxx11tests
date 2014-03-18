@@ -25,13 +25,13 @@ def setupArgparser():
                          default = False,
                          help = "Debug mode.")
 
-    parser.add_argument( "-c", "--compiler", dest = "compiler",
+    parser.add_argument( "-c", "--compiler", "--cxx", dest = "compiler",
                          action = "store", 
                          default = "g++",
                          metavar = "COMPILER",
                          help = "Name of compiler binary (e.g. gcc, g++, clang)" )
 
-    parser.add_argument( "--compiler-flags", "--cflags",
+    parser.add_argument( "--compiler-flags", "--cxxflags",
                          dest = "compiler_flags",
                          action = "store", 
                          default = "",
