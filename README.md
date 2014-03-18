@@ -71,13 +71,20 @@ Installation & Requirements
 
 The following software packages are needed to run cxx11tests:
 
-*   Python 3 (>= 3.3)
+*   Python 2
 *   GNU Make
 *   any C++ compiler
 
 There is no installation necessary, just obtain cxx11tests and you are good to
 go.
 
+iOS
+~~~
+
+In order to run the iOS port of the tests, these are the additional requirements:
+
+*   Xcode >= 5
+*   Xcode commandline tools
 
 Usage
 -----
@@ -130,6 +137,16 @@ to '0' (zero), or my calling make with
 
     make COLORIZED=0
 
+iOS
+~~~
+
+The iOS tests are launched like so:
+
+    ios/test_ios.py
+
+At present this simply executes xcodebuild in the 'ios' subdirectory. Much like in
+the vanilla tests, if the build succeeds all features are supported, otherwise the
+Xcode error output will hopefully indicate which feature(s) is/are missing.
 
 Contributions
 -------------
