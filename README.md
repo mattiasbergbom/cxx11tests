@@ -78,8 +78,8 @@ The following software packages are needed to run cxx11tests:
 There is no installation necessary, just obtain cxx11tests and you are good to
 go.
 
-iOS
-~~~
+### iOS
+
 
 In order to run the iOS port of the tests, these are the additional requirements:
 
@@ -138,8 +138,7 @@ to '0' (zero), or my calling make with
 
     make COLORIZED=0
 
-iOS
-~~~
+### iOS
 
 The iOS tests are launched like so:
 
