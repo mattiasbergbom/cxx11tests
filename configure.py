@@ -10,18 +10,52 @@ except ImportError:
     print "Using pipes.quote (UNIX only) because shlex.quote is not available in Python 2."
     from pipes import quote
 
+def setupArgparser():
+    import argparse
+    
+    parser = argparse.ArgumentParser( description='Generate a makefile for cxx11tests' )
+
+    parser.add_argument( "-v", "--verbose", dest = "verbose",
+                         action = "store_true", 
+                         default = False,
+                         help = "Verbose mode.")
+
+    parser.add_argument( "-d", "--debug", dest = "debug",
+                         action = "store_true", 
+                         default = False,
+                         help = "Debug mode.")
+
+    parser.add_argument( "-c", "--compiler", dest = "compiler",
+                         action = "store", 
+                         default = "g++",
+                         metavar = "COMPILER",
+                         help = "Name of compiler binary (e.g. gcc, g++, clang)" )
+
+    parser.add_argument( "--compiler-flags", "--cflags",
+                         dest = "compiler_flags",
+                         action = "store", 
+                         default = "",
+                         type = str,
+                         metavar = "COMPILER_FLAGS",
+                         help = "Compiler flags, provided verbatim to the compiler." )
+
+    return parser
 
 def main():
-    root_dir = os.path.dirname(os.path.realpath(__file__))
-    src_dir = os.path.join(root_dir, 'src')
-    m = MakefileGen(root_dir, src_dir, 'build', 'cpp', 'g++')
+    # parse commandline 
+    parser = setupArgparser()
+    args = parser.parse_args()
+
+    root_dir = os.path.dirname( os.path.realpath( __file__ ) )
+    src_dir = os.path.join( root_dir, 'src' )
+    m = MakefileGen( root_dir, src_dir, 'build', 'cpp', args.compiler, args.compiler_flags )
     m.generate()
     return 0
 
 
 class MakefileGen:
     def __init__(self, root_dir = '.', src_dir='src', build_dir='build',
-                 ext='cpp', compiler='g++'):
+                 ext='cpp', compiler='g++', compiler_flags = None ):
         # Save arguments
         self.root_dir = root_dir
         self.build_dir = build_dir
@@ -29,6 +63,8 @@ class MakefileGen:
         self.extension = ext
         self.compiler = compiler
 
+        self.compiler_flags = compiler_flags
+        
         # Init member variables
         self.files = []
         self.tests = []
@@ -59,6 +95,8 @@ class MakefileGen:
     def create_makefile_header(self):
         self.makefile_header = []
 
+        LFLAGS = ''
+        
         # Get configuration options
         if 'CXX' in os.environ:
             CXX = os.environ['CXX']
@@ -73,6 +111,8 @@ class MakefileGen:
         else:
             CXXFLAGS = ''
 
+        CXXFLAGS += self.compiler_flags
+            
         # Add command that can be used to recreate the same Makefile
         self.makefile_header.append("# Command to regenerate this Makefile:")
         self.makefile_header.append(
