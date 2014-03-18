@@ -71,7 +71,7 @@ Installation & Requirements
 
 The following software packages are needed to run cxx11tests:
 
-*   Python 2
+*   Python >= 2.7
 *   GNU Make
 *   any C++ compiler
 
@@ -81,11 +81,12 @@ go.
 ### iOS
 
 
-In order to run the iOS port of the tests, these are the additional requirements:
+In order to run the iOS port of the tests, these requirements replace the above ones:
 
+*   Python >= 2.5
 *   Xcode >= 5
 *   Xcode commandline tools
-*   Xcode developer certificates (see https://developer.apple.com/support/technical/certificates/)
+*   Xcode developer certificate (see https://developer.apple.com/support/technical/certificates/)
 
 Usage
 -----
