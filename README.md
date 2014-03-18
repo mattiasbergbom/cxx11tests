@@ -145,9 +145,10 @@ The iOS tests are launched like so:
 
     ios/test_ios.py
 
-At present this simply executes xcodebuild in the 'ios' subdirectory. Much like in
-the vanilla tests, if the build succeeds all features are supported, otherwise the
-Xcode error output will hopefully indicate which feature(s) is/are missing.
+At present this simply executes xcodebuild in the 'ios' subdirectory, which holds a
+mocked up Xcode project that references the same source files as the base test suite.
+If the build succeeds all features are supported, otherwise the Xcode error output will
+indicate which feature(s) is/are missing.
 
 Contributions
 -------------
