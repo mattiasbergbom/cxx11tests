@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDE32C9018D74C2A0021F33E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE32C8F18D74C2A0021F33E /* Foundation.framework */; };
+		CDE32C9218D74C2A0021F33E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE32C9118D74C2A0021F33E /* CoreGraphics.framework */; };
+		CDE32C9418D74C2A0021F33E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE32C9318D74C2A0021F33E /* UIKit.framework */; };
+		CDE32C9A18D74C2A0021F33E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDE32C9818D74C2A0021F33E /* InfoPlist.strings */; };
+		CDE32C9C18D74C2A0021F33E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE32C9B18D74C2A0021F33E /* main.m */; };
+		CDE32CA018D74C2A0021F33E /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE32C9F18D74C2A0021F33E /* SPAppDelegate.m */; };
+		CDE32CA218D74C2A0021F33E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE32CA118D74C2A0021F33E /* Images.xcassets */; };
+		CDE32CA918D74C2A0021F33E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE32CA818D74C2A0021F33E /* XCTest.framework */; };
+		CDE32CAA18D74C2A0021F33E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE32C8F18D74C2A0021F33E /* Foundation.framework */; };
+		CDE32CAB18D74C2A0021F33E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE32C9318D74C2A0021F33E /* UIKit.framework */; };
+		CDE32CB318D74C2A0021F33E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDE32CB118D74C2A0021F33E /* InfoPlist.strings */; };
+		CDE32CB518D74C2A0021F33E /* cxx11testsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE32CB418D74C2A0021F33E /* cxx11testsTests.m */; };
+		CDE32D9318D752510021F33E /* alias-templates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D4C18D752510021F33E /* alias-templates.cpp */; };
+		CDE32D9418D752510021F33E /* alignas-size.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D4D18D752510021F33E /* alignas-size.cpp */; };
+		CDE32D9518D752510021F33E /* alignas-type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D4E18D752510021F33E /* alignas-type.cpp */; };
+		CDE32D9618D752510021F33E /* alignof.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D4F18D752510021F33E /* alignof.cpp */; };
+		CDE32D9718D752510021F33E /* auto-return-type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5018D752510021F33E /* auto-return-type.cpp */; };
+		CDE32D9818D752510021F33E /* auto-variable-literals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5118D752510021F33E /* auto-variable-literals.cpp */; };
+		CDE32D9918D752510021F33E /* constexpr-float-array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5218D752510021F33E /* constexpr-float-array.cpp */; };
+		CDE32D9A18D752510021F33E /* constexpr-initialize-const.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5318D752510021F33E /* constexpr-initialize-const.cpp */; };
+		CDE32D9B18D752510021F33E /* constexpr-template-parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5418D752510021F33E /* constexpr-template-parameter.cpp */; };
+		CDE32D9C18D752510021F33E /* constructors-delegating.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5518D752510021F33E /* constructors-delegating.cpp */; };
+		CDE32D9D18D752510021F33E /* constructors-inheriting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5618D752510021F33E /* constructors-inheriting.cpp */; };
+		CDE32D9E18D752510021F33E /* decltype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5718D752510021F33E /* decltype.cpp */; };
+		CDE32D9F18D752510021F33E /* default-member-functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5818D752510021F33E /* default-member-functions.cpp */; };
+		CDE32DA018D752510021F33E /* default-member-initialization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5918D752510021F33E /* default-member-initialization.cpp */; };
+		CDE32DA118D752510021F33E /* delete-functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5A18D752510021F33E /* delete-functions.cpp */; };
+		CDE32DA218D752510021F33E /* delete-member-functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5B18D752510021F33E /* delete-member-functions.cpp */; };
+		CDE32DA318D752510021F33E /* enum-class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5C18D752510021F33E /* enum-class.cpp */; };
+		CDE32DA418D752510021F33E /* enum-enhanced.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5D18D752510021F33E /* enum-enhanced.cpp */; };
+		CDE32DA518D752510021F33E /* enum-forward-declare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5E18D752510021F33E /* enum-forward-declare.cpp */; };
+		CDE32DA618D752510021F33E /* final-override.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D5F18D752510021F33E /* final-override.cpp */; };
+		CDE32DA718D752510021F33E /* generalized-functors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6018D752510021F33E /* generalized-functors.cpp */; };
+		CDE32DA818D752510021F33E /* include-array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6118D752510021F33E /* include-array.cpp */; };
+		CDE32DA918D752510021F33E /* include-chrono.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6218D752510021F33E /* include-chrono.cpp */; };
+		CDE32DAA18D752510021F33E /* include-condition-variable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6318D752510021F33E /* include-condition-variable.cpp */; };
+		CDE32DAB18D752510021F33E /* include-forward-list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6418D752510021F33E /* include-forward-list.cpp */; };
+		CDE32DAC18D752510021F33E /* include-functional.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6518D752510021F33E /* include-functional.cpp */; };
+		CDE32DAD18D752520021F33E /* include-future.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6618D752510021F33E /* include-future.cpp */; };
+		CDE32DAE18D752520021F33E /* include-initializer-list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6718D752510021F33E /* include-initializer-list.cpp */; };
+		CDE32DAF18D752520021F33E /* include-mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6818D752510021F33E /* include-mutex.cpp */; };
+		CDE32DB018D752520021F33E /* include-regex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6918D752510021F33E /* include-regex.cpp */; };
+		CDE32DB118D752520021F33E /* include-thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6A18D752510021F33E /* include-thread.cpp */; };
+		CDE32DB218D752520021F33E /* include-tuple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6B18D752510021F33E /* include-tuple.cpp */; };
+		CDE32DB318D752520021F33E /* include-unordered-map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6C18D752510021F33E /* include-unordered-map.cpp */; };
+		CDE32DB418D752520021F33E /* include-unordered-set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6D18D752510021F33E /* include-unordered-set.cpp */; };
+		CDE32DB518D752520021F33E /* inline-namespaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6E18D752510021F33E /* inline-namespaces.cpp */; };
+		CDE32DB618D752520021F33E /* lambda-expressions-capture-reference.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D6F18D752510021F33E /* lambda-expressions-capture-reference.cpp */; };
+		CDE32DB718D752520021F33E /* lambda-expressions-capture-value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7018D752510021F33E /* lambda-expressions-capture-value.cpp */; };
+		CDE32DB818D752520021F33E /* lambda-expressions-function-pointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7118D752510021F33E /* lambda-expressions-function-pointer.cpp */; };
+		CDE32DB918D752520021F33E /* lambda-expressions-general.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7218D752510021F33E /* lambda-expressions-general.cpp */; };
+		CDE32DBA18D752520021F33E /* local-type-template-argument.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7318D752510021F33E /* local-type-template-argument.cpp */; };
+		CDE32DBB18D752520021F33E /* long-long.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7418D752510021F33E /* long-long.cpp */; };
+		CDE32DBC18D752520021F33E /* nested-template-closer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7518D752510021F33E /* nested-template-closer.cpp */; };
+		CDE32DBD18D752520021F33E /* nullptr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7618D752510021F33E /* nullptr.cpp */; };
+		CDE32DBE18D752520021F33E /* perfect-forwarding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7718D752510021F33E /* perfect-forwarding.cpp */; };
+		CDE32DBF18D752520021F33E /* range-based-for.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7818D752510021F33E /* range-based-for.cpp */; };
+		CDE32DC018D752520021F33E /* raw-string-literals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7918D752510021F33E /* raw-string-literals.cpp */; };
+		CDE32DC118D752520021F33E /* rvalue-references.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7A18D752510021F33E /* rvalue-references.cpp */; };
+		CDE32DC218D752520021F33E /* shared-ptr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7B18D752510021F33E /* shared-ptr.cpp */; };
+		CDE32DC318D752520021F33E /* static-assertions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7C18D752510021F33E /* static-assertions.cpp */; };
+		CDE32DC418D752520021F33E /* std-array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7D18D752510021F33E /* std-array.cpp */; };
+		CDE32DC518D752520021F33E /* std-bind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7E18D752510021F33E /* std-bind.cpp */; };
+		CDE32DC618D752520021F33E /* std-move.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D7F18D752510021F33E /* std-move.cpp */; };
+		CDE32DC718D752520021F33E /* std-vector-features.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8018D752510021F33E /* std-vector-features.cpp */; };
+		CDE32DC818D752520021F33E /* trailing-return-type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8118D752510021F33E /* trailing-return-type.cpp */; };
+		CDE32DC918D752520021F33E /* tuples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8218D752510021F33E /* tuples.cpp */; };
+		CDE32DCA18D752520021F33E /* unicode-char-types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8318D752510021F33E /* unicode-char-types.cpp */; };
+		CDE32DCB18D752520021F33E /* unicode-string-literals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8418D752510021F33E /* unicode-string-literals.cpp */; };
+		CDE32DCC18D752520021F33E /* unicode-string-typedefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8518D752510021F33E /* unicode-string-typedefs.cpp */; };
+		CDE32DCD18D752520021F33E /* uniform-initialization-heap-arrays.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8618D752510021F33E /* uniform-initialization-heap-arrays.cpp */; };
+		CDE32DCE18D752520021F33E /* uniform-initialization-implicit-ctor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8718D752510021F33E /* uniform-initialization-implicit-ctor.cpp */; };
+		CDE32DCF18D752520021F33E /* uniform-initialization-initializer-list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8818D752510021F33E /* uniform-initialization-initializer-list.cpp */; };
+		CDE32DD018D752520021F33E /* uniform-initialization-stack-arrays.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8918D752510021F33E /* uniform-initialization-stack-arrays.cpp */; };
+		CDE32DD118D752520021F33E /* uniform-initialization-too-few-initializers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8A18D752510021F33E /* uniform-initialization-too-few-initializers.cpp */; };
+		CDE32DD218D752520021F33E /* uniform-initialization-variables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8B18D752510021F33E /* uniform-initialization-variables.cpp */; };
+		CDE32DD318D752520021F33E /* uniform-initialization-vectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8C18D752510021F33E /* uniform-initialization-vectors.cpp */; };
+		CDE32DD418D752520021F33E /* unique-ptr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8D18D752510021F33E /* unique-ptr.cpp */; };
+		CDE32DD518D752520021F33E /* using-as-typedef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8E18D752510021F33E /* using-as-typedef.cpp */; };
+		CDE32DD618D752520021F33E /* vararg-macros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D8F18D752510021F33E /* vararg-macros.cpp */; };
+		CDE32DD718D752520021F33E /* variadic-sizeof.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D9018D752510021F33E /* variadic-sizeof.cpp */; };
+		CDE32DD818D752520021F33E /* variadic-templates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D9118D752510021F33E /* variadic-templates.cpp */; };
+		CDE32DD918D752520021F33E /* weak-ptr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE32D9218D752510021F33E /* weak-ptr.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDE32CAC18D74C2A0021F33E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDE32C8418D74C2A0021F33E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE32C8B18D74C2A0021F33E;
+			remoteInfo = cxx11tests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDE32C8C18D74C2A0021F33E /* cxx11tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cxx11tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE32C8F18D74C2A0021F33E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDE32C9118D74C2A0021F33E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CDE32C9318D74C2A0021F33E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CDE32C9718D74C2A0021F33E /* cxx11tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cxx11tests-Info.plist"; sourceTree = "<group>"; };
+		CDE32C9918D74C2A0021F33E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDE32C9B18D74C2A0021F33E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDE32C9D18D74C2A0021F33E /* cxx11tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cxx11tests-Prefix.pch"; sourceTree = "<group>"; };
+		CDE32C9E18D74C2A0021F33E /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
+		CDE32C9F18D74C2A0021F33E /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
+		CDE32CA118D74C2A0021F33E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CDE32CA718D74C2A0021F33E /* cxx11testsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cxx11testsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE32CA818D74C2A0021F33E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CDE32CB018D74C2A0021F33E /* cxx11testsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cxx11testsTests-Info.plist"; sourceTree = "<group>"; };
+		CDE32CB218D74C2A0021F33E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDE32CB418D74C2A0021F33E /* cxx11testsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cxx11testsTests.m; sourceTree = "<group>"; };
+		CDE32D4C18D752510021F33E /* alias-templates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "alias-templates.cpp"; path = "../src/alias-templates.cpp"; sourceTree = "<group>"; };
+		CDE32D4D18D752510021F33E /* alignas-size.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "alignas-size.cpp"; path = "../src/alignas-size.cpp"; sourceTree = "<group>"; };
+		CDE32D4E18D752510021F33E /* alignas-type.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "alignas-type.cpp"; path = "../src/alignas-type.cpp"; sourceTree = "<group>"; };
+		CDE32D4F18D752510021F33E /* alignof.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = alignof.cpp; path = ../src/alignof.cpp; sourceTree = "<group>"; };
+		CDE32D5018D752510021F33E /* auto-return-type.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "auto-return-type.cpp"; path = "../src/auto-return-type.cpp"; sourceTree = "<group>"; };
+		CDE32D5118D752510021F33E /* auto-variable-literals.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "auto-variable-literals.cpp"; path = "../src/auto-variable-literals.cpp"; sourceTree = "<group>"; };
+		CDE32D5218D752510021F33E /* constexpr-float-array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "constexpr-float-array.cpp"; path = "../src/constexpr-float-array.cpp"; sourceTree = "<group>"; };
+		CDE32D5318D752510021F33E /* constexpr-initialize-const.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "constexpr-initialize-const.cpp"; path = "../src/constexpr-initialize-const.cpp"; sourceTree = "<group>"; };
+		CDE32D5418D752510021F33E /* constexpr-template-parameter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "constexpr-template-parameter.cpp"; path = "../src/constexpr-template-parameter.cpp"; sourceTree = "<group>"; };
+		CDE32D5518D752510021F33E /* constructors-delegating.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "constructors-delegating.cpp"; path = "../src/constructors-delegating.cpp"; sourceTree = "<group>"; };
+		CDE32D5618D752510021F33E /* constructors-inheriting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "constructors-inheriting.cpp"; path = "../src/constructors-inheriting.cpp"; sourceTree = "<group>"; };
+		CDE32D5718D752510021F33E /* decltype.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = decltype.cpp; path = ../src/decltype.cpp; sourceTree = "<group>"; };
+		CDE32D5818D752510021F33E /* default-member-functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "default-member-functions.cpp"; path = "../src/default-member-functions.cpp"; sourceTree = "<group>"; };
+		CDE32D5918D752510021F33E /* default-member-initialization.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "default-member-initialization.cpp"; path = "../src/default-member-initialization.cpp"; sourceTree = "<group>"; };
+		CDE32D5A18D752510021F33E /* delete-functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "delete-functions.cpp"; path = "../src/delete-functions.cpp"; sourceTree = "<group>"; };
+		CDE32D5B18D752510021F33E /* delete-member-functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "delete-member-functions.cpp"; path = "../src/delete-member-functions.cpp"; sourceTree = "<group>"; };
+		CDE32D5C18D752510021F33E /* enum-class.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "enum-class.cpp"; path = "../src/enum-class.cpp"; sourceTree = "<group>"; };
+		CDE32D5D18D752510021F33E /* enum-enhanced.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "enum-enhanced.cpp"; path = "../src/enum-enhanced.cpp"; sourceTree = "<group>"; };
+		CDE32D5E18D752510021F33E /* enum-forward-declare.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "enum-forward-declare.cpp"; path = "../src/enum-forward-declare.cpp"; sourceTree = "<group>"; };
+		CDE32D5F18D752510021F33E /* final-override.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "final-override.cpp"; path = "../src/final-override.cpp"; sourceTree = "<group>"; };
+		CDE32D6018D752510021F33E /* generalized-functors.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "generalized-functors.cpp"; path = "../src/generalized-functors.cpp"; sourceTree = "<group>"; };
+		CDE32D6118D752510021F33E /* include-array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-array.cpp"; path = "../src/include-array.cpp"; sourceTree = "<group>"; };
+		CDE32D6218D752510021F33E /* include-chrono.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-chrono.cpp"; path = "../src/include-chrono.cpp"; sourceTree = "<group>"; };
+		CDE32D6318D752510021F33E /* include-condition-variable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-condition-variable.cpp"; path = "../src/include-condition-variable.cpp"; sourceTree = "<group>"; };
+		CDE32D6418D752510021F33E /* include-forward-list.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-forward-list.cpp"; path = "../src/include-forward-list.cpp"; sourceTree = "<group>"; };
+		CDE32D6518D752510021F33E /* include-functional.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-functional.cpp"; path = "../src/include-functional.cpp"; sourceTree = "<group>"; };
+		CDE32D6618D752510021F33E /* include-future.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-future.cpp"; path = "../src/include-future.cpp"; sourceTree = "<group>"; };
+		CDE32D6718D752510021F33E /* include-initializer-list.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-initializer-list.cpp"; path = "../src/include-initializer-list.cpp"; sourceTree = "<group>"; };
+		CDE32D6818D752510021F33E /* include-mutex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-mutex.cpp"; path = "../src/include-mutex.cpp"; sourceTree = "<group>"; };
+		CDE32D6918D752510021F33E /* include-regex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-regex.cpp"; path = "../src/include-regex.cpp"; sourceTree = "<group>"; };
+		CDE32D6A18D752510021F33E /* include-thread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-thread.cpp"; path = "../src/include-thread.cpp"; sourceTree = "<group>"; };
+		CDE32D6B18D752510021F33E /* include-tuple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-tuple.cpp"; path = "../src/include-tuple.cpp"; sourceTree = "<group>"; };
+		CDE32D6C18D752510021F33E /* include-unordered-map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-unordered-map.cpp"; path = "../src/include-unordered-map.cpp"; sourceTree = "<group>"; };
+		CDE32D6D18D752510021F33E /* include-unordered-set.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include-unordered-set.cpp"; path = "../src/include-unordered-set.cpp"; sourceTree = "<group>"; };
+		CDE32D6E18D752510021F33E /* inline-namespaces.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "inline-namespaces.cpp"; path = "../src/inline-namespaces.cpp"; sourceTree = "<group>"; };
+		CDE32D6F18D752510021F33E /* lambda-expressions-capture-reference.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "lambda-expressions-capture-reference.cpp"; path = "../src/lambda-expressions-capture-reference.cpp"; sourceTree = "<group>"; };
+		CDE32D7018D752510021F33E /* lambda-expressions-capture-value.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "lambda-expressions-capture-value.cpp"; path = "../src/lambda-expressions-capture-value.cpp"; sourceTree = "<group>"; };
+		CDE32D7118D752510021F33E /* lambda-expressions-function-pointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "lambda-expressions-function-pointer.cpp"; path = "../src/lambda-expressions-function-pointer.cpp"; sourceTree = "<group>"; };
+		CDE32D7218D752510021F33E /* lambda-expressions-general.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "lambda-expressions-general.cpp"; path = "../src/lambda-expressions-general.cpp"; sourceTree = "<group>"; };
+		CDE32D7318D752510021F33E /* local-type-template-argument.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "local-type-template-argument.cpp"; path = "../src/local-type-template-argument.cpp"; sourceTree = "<group>"; };
+		CDE32D7418D752510021F33E /* long-long.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "long-long.cpp"; path = "../src/long-long.cpp"; sourceTree = "<group>"; };
+		CDE32D7518D752510021F33E /* nested-template-closer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "nested-template-closer.cpp"; path = "../src/nested-template-closer.cpp"; sourceTree = "<group>"; };
+		CDE32D7618D752510021F33E /* nullptr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = nullptr.cpp; path = ../src/nullptr.cpp; sourceTree = "<group>"; };
+		CDE32D7718D752510021F33E /* perfect-forwarding.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "perfect-forwarding.cpp"; path = "../src/perfect-forwarding.cpp"; sourceTree = "<group>"; };
+		CDE32D7818D752510021F33E /* range-based-for.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "range-based-for.cpp"; path = "../src/range-based-for.cpp"; sourceTree = "<group>"; };
+		CDE32D7918D752510021F33E /* raw-string-literals.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "raw-string-literals.cpp"; path = "../src/raw-string-literals.cpp"; sourceTree = "<group>"; };
+		CDE32D7A18D752510021F33E /* rvalue-references.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "rvalue-references.cpp"; path = "../src/rvalue-references.cpp"; sourceTree = "<group>"; };
+		CDE32D7B18D752510021F33E /* shared-ptr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "shared-ptr.cpp"; path = "../src/shared-ptr.cpp"; sourceTree = "<group>"; };
+		CDE32D7C18D752510021F33E /* static-assertions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "static-assertions.cpp"; path = "../src/static-assertions.cpp"; sourceTree = "<group>"; };
+		CDE32D7D18D752510021F33E /* std-array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "std-array.cpp"; path = "../src/std-array.cpp"; sourceTree = "<group>"; };
+		CDE32D7E18D752510021F33E /* std-bind.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "std-bind.cpp"; path = "../src/std-bind.cpp"; sourceTree = "<group>"; };
+		CDE32D7F18D752510021F33E /* std-move.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "std-move.cpp"; path = "../src/std-move.cpp"; sourceTree = "<group>"; };
+		CDE32D8018D752510021F33E /* std-vector-features.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "std-vector-features.cpp"; path = "../src/std-vector-features.cpp"; sourceTree = "<group>"; };
+		CDE32D8118D752510021F33E /* trailing-return-type.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "trailing-return-type.cpp"; path = "../src/trailing-return-type.cpp"; sourceTree = "<group>"; };
+		CDE32D8218D752510021F33E /* tuples.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tuples.cpp; path = ../src/tuples.cpp; sourceTree = "<group>"; };
+		CDE32D8318D752510021F33E /* unicode-char-types.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "unicode-char-types.cpp"; path = "../src/unicode-char-types.cpp"; sourceTree = "<group>"; };
+		CDE32D8418D752510021F33E /* unicode-string-literals.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "unicode-string-literals.cpp"; path = "../src/unicode-string-literals.cpp"; sourceTree = "<group>"; };
+		CDE32D8518D752510021F33E /* unicode-string-typedefs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "unicode-string-typedefs.cpp"; path = "../src/unicode-string-typedefs.cpp"; sourceTree = "<group>"; };
+		CDE32D8618D752510021F33E /* uniform-initialization-heap-arrays.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "uniform-initialization-heap-arrays.cpp"; path = "../src/uniform-initialization-heap-arrays.cpp"; sourceTree = "<group>"; };
+		CDE32D8718D752510021F33E /* uniform-initialization-implicit-ctor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "uniform-initialization-implicit-ctor.cpp"; path = "../src/uniform-initialization-implicit-ctor.cpp"; sourceTree = "<group>"; };
+		CDE32D8818D752510021F33E /* uniform-initialization-initializer-list.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "uniform-initialization-initializer-list.cpp"; path = "../src/uniform-initialization-initializer-list.cpp"; sourceTree = "<group>"; };
+		CDE32D8918D752510021F33E /* uniform-initialization-stack-arrays.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "uniform-initialization-stack-arrays.cpp"; path = "../src/uniform-initialization-stack-arrays.cpp"; sourceTree = "<group>"; };
+		CDE32D8A18D752510021F33E /* uniform-initialization-too-few-initializers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "uniform-initialization-too-few-initializers.cpp"; path = "../src/uniform-initialization-too-few-initializers.cpp"; sourceTree = "<group>"; };
+		CDE32D8B18D752510021F33E /* uniform-initialization-variables.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "uniform-initialization-variables.cpp"; path = "../src/uniform-initialization-variables.cpp"; sourceTree = "<group>"; };
+		CDE32D8C18D752510021F33E /* uniform-initialization-vectors.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "uniform-initialization-vectors.cpp"; path = "../src/uniform-initialization-vectors.cpp"; sourceTree = "<group>"; };
+		CDE32D8D18D752510021F33E /* unique-ptr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "unique-ptr.cpp"; path = "../src/unique-ptr.cpp"; sourceTree = "<group>"; };
+		CDE32D8E18D752510021F33E /* using-as-typedef.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "using-as-typedef.cpp"; path = "../src/using-as-typedef.cpp"; sourceTree = "<group>"; };
+		CDE32D8F18D752510021F33E /* vararg-macros.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "vararg-macros.cpp"; path = "../src/vararg-macros.cpp"; sourceTree = "<group>"; };
+		CDE32D9018D752510021F33E /* variadic-sizeof.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "variadic-sizeof.cpp"; path = "../src/variadic-sizeof.cpp"; sourceTree = "<group>"; };
+		CDE32D9118D752510021F33E /* variadic-templates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "variadic-templates.cpp"; path = "../src/variadic-templates.cpp"; sourceTree = "<group>"; };
+		CDE32D9218D752510021F33E /* weak-ptr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "weak-ptr.cpp"; path = "../src/weak-ptr.cpp"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDE32C8918D74C2A0021F33E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE32C9218D74C2A0021F33E /* CoreGraphics.framework in Frameworks */,
+				CDE32C9418D74C2A0021F33E /* UIKit.framework in Frameworks */,
+				CDE32C9018D74C2A0021F33E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE32CA418D74C2A0021F33E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE32CA918D74C2A0021F33E /* XCTest.framework in Frameworks */,
+				CDE32CAB18D74C2A0021F33E /* UIKit.framework in Frameworks */,
+				CDE32CAA18D74C2A0021F33E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDE32C8318D74C2A0021F33E = {
+			isa = PBXGroup;
+			children = (
+				CDE32D4C18D752510021F33E /* alias-templates.cpp */,
+				CDE32D4D18D752510021F33E /* alignas-size.cpp */,
+				CDE32D4E18D752510021F33E /* alignas-type.cpp */,
+				CDE32D4F18D752510021F33E /* alignof.cpp */,
+				CDE32D5018D752510021F33E /* auto-return-type.cpp */,
+				CDE32D5118D752510021F33E /* auto-variable-literals.cpp */,
+				CDE32D5218D752510021F33E /* constexpr-float-array.cpp */,
+				CDE32D5318D752510021F33E /* constexpr-initialize-const.cpp */,
+				CDE32D5418D752510021F33E /* constexpr-template-parameter.cpp */,
+				CDE32D5518D752510021F33E /* constructors-delegating.cpp */,
+				CDE32D5618D752510021F33E /* constructors-inheriting.cpp */,
+				CDE32D5718D752510021F33E /* decltype.cpp */,
+				CDE32D5818D752510021F33E /* default-member-functions.cpp */,
+				CDE32D5918D752510021F33E /* default-member-initialization.cpp */,
+				CDE32D5A18D752510021F33E /* delete-functions.cpp */,
+				CDE32D5B18D752510021F33E /* delete-member-functions.cpp */,
+				CDE32D5C18D752510021F33E /* enum-class.cpp */,
+				CDE32D5D18D752510021F33E /* enum-enhanced.cpp */,
+				CDE32D5E18D752510021F33E /* enum-forward-declare.cpp */,
+				CDE32D5F18D752510021F33E /* final-override.cpp */,
+				CDE32D6018D752510021F33E /* generalized-functors.cpp */,
+				CDE32D6118D752510021F33E /* include-array.cpp */,
+				CDE32D6218D752510021F33E /* include-chrono.cpp */,
+				CDE32D6318D752510021F33E /* include-condition-variable.cpp */,
+				CDE32D6418D752510021F33E /* include-forward-list.cpp */,
+				CDE32D6518D752510021F33E /* include-functional.cpp */,
+				CDE32D6618D752510021F33E /* include-future.cpp */,
+				CDE32D6718D752510021F33E /* include-initializer-list.cpp */,
+				CDE32D6818D752510021F33E /* include-mutex.cpp */,
+				CDE32D6918D752510021F33E /* include-regex.cpp */,
+				CDE32D6A18D752510021F33E /* include-thread.cpp */,
+				CDE32D6B18D752510021F33E /* include-tuple.cpp */,
+				CDE32D6C18D752510021F33E /* include-unordered-map.cpp */,
+				CDE32D6D18D752510021F33E /* include-unordered-set.cpp */,
+				CDE32D6E18D752510021F33E /* inline-namespaces.cpp */,
+				CDE32D6F18D752510021F33E /* lambda-expressions-capture-reference.cpp */,
+				CDE32D7018D752510021F33E /* lambda-expressions-capture-value.cpp */,
+				CDE32D7118D752510021F33E /* lambda-expressions-function-pointer.cpp */,
+				CDE32D7218D752510021F33E /* lambda-expressions-general.cpp */,
+				CDE32D7318D752510021F33E /* local-type-template-argument.cpp */,
+				CDE32D7418D752510021F33E /* long-long.cpp */,
+				CDE32D7518D752510021F33E /* nested-template-closer.cpp */,
+				CDE32D7618D752510021F33E /* nullptr.cpp */,
+				CDE32D7718D752510021F33E /* perfect-forwarding.cpp */,
+				CDE32D7818D752510021F33E /* range-based-for.cpp */,
+				CDE32D7918D752510021F33E /* raw-string-literals.cpp */,
+				CDE32D7A18D752510021F33E /* rvalue-references.cpp */,
+				CDE32D7B18D752510021F33E /* shared-ptr.cpp */,
+				CDE32D7C18D752510021F33E /* static-assertions.cpp */,
+				CDE32D7D18D752510021F33E /* std-array.cpp */,
+				CDE32D7E18D752510021F33E /* std-bind.cpp */,
+				CDE32D7F18D752510021F33E /* std-move.cpp */,
+				CDE32D8018D752510021F33E /* std-vector-features.cpp */,
+				CDE32D8118D752510021F33E /* trailing-return-type.cpp */,
+				CDE32D8218D752510021F33E /* tuples.cpp */,
+				CDE32D8318D752510021F33E /* unicode-char-types.cpp */,
+				CDE32D8418D752510021F33E /* unicode-string-literals.cpp */,
+				CDE32D8518D752510021F33E /* unicode-string-typedefs.cpp */,
+				CDE32D8618D752510021F33E /* uniform-initialization-heap-arrays.cpp */,
+				CDE32D8718D752510021F33E /* uniform-initialization-implicit-ctor.cpp */,
+				CDE32D8818D752510021F33E /* uniform-initialization-initializer-list.cpp */,
+				CDE32D8918D752510021F33E /* uniform-initialization-stack-arrays.cpp */,
+				CDE32D8A18D752510021F33E /* uniform-initialization-too-few-initializers.cpp */,
+				CDE32D8B18D752510021F33E /* uniform-initialization-variables.cpp */,
+				CDE32D8C18D752510021F33E /* uniform-initialization-vectors.cpp */,
+				CDE32D8D18D752510021F33E /* unique-ptr.cpp */,
+				CDE32D8E18D752510021F33E /* using-as-typedef.cpp */,
+				CDE32D8F18D752510021F33E /* vararg-macros.cpp */,
+				CDE32D9018D752510021F33E /* variadic-sizeof.cpp */,
+				CDE32D9118D752510021F33E /* variadic-templates.cpp */,
+				CDE32D9218D752510021F33E /* weak-ptr.cpp */,
+				CDE32C9518D74C2A0021F33E /* cxx11tests */,
+				CDE32CAE18D74C2A0021F33E /* cxx11testsTests */,
+				CDE32C8E18D74C2A0021F33E /* Frameworks */,
+				CDE32C8D18D74C2A0021F33E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDE32C8D18D74C2A0021F33E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDE32C8C18D74C2A0021F33E /* cxx11tests.app */,
+				CDE32CA718D74C2A0021F33E /* cxx11testsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDE32C8E18D74C2A0021F33E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDE32C8F18D74C2A0021F33E /* Foundation.framework */,
+				CDE32C9118D74C2A0021F33E /* CoreGraphics.framework */,
+				CDE32C9318D74C2A0021F33E /* UIKit.framework */,
+				CDE32CA818D74C2A0021F33E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDE32C9518D74C2A0021F33E /* cxx11tests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE32C9E18D74C2A0021F33E /* SPAppDelegate.h */,
+				CDE32C9F18D74C2A0021F33E /* SPAppDelegate.m */,
+				CDE32CA118D74C2A0021F33E /* Images.xcassets */,
+				CDE32C9618D74C2A0021F33E /* Supporting Files */,
+			);
+			path = cxx11tests;
+			sourceTree = "<group>";
+		};
+		CDE32C9618D74C2A0021F33E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDE32C9718D74C2A0021F33E /* cxx11tests-Info.plist */,
+				CDE32C9818D74C2A0021F33E /* InfoPlist.strings */,
+				CDE32C9B18D74C2A0021F33E /* main.m */,
+				CDE32C9D18D74C2A0021F33E /* cxx11tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDE32CAE18D74C2A0021F33E /* cxx11testsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE32CB418D74C2A0021F33E /* cxx11testsTests.m */,
+				CDE32CAF18D74C2A0021F33E /* Supporting Files */,
+			);
+			path = cxx11testsTests;
+			sourceTree = "<group>";
+		};
+		CDE32CAF18D74C2A0021F33E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDE32CB018D74C2A0021F33E /* cxx11testsTests-Info.plist */,
+				CDE32CB118D74C2A0021F33E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDE32C8B18D74C2A0021F33E /* cxx11tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE32CB818D74C2A0021F33E /* Build configuration list for PBXNativeTarget "cxx11tests" */;
+			buildPhases = (
+				CDE32C8818D74C2A0021F33E /* Sources */,
+				CDE32C8918D74C2A0021F33E /* Frameworks */,
+				CDE32C8A18D74C2A0021F33E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cxx11tests;
+			productName = cxx11tests;
+			productReference = CDE32C8C18D74C2A0021F33E /* cxx11tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDE32CA618D74C2A0021F33E /* cxx11testsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE32CBB18D74C2A0021F33E /* Build configuration list for PBXNativeTarget "cxx11testsTests" */;
+			buildPhases = (
+				CDE32CA318D74C2A0021F33E /* Sources */,
+				CDE32CA418D74C2A0021F33E /* Frameworks */,
+				CDE32CA518D74C2A0021F33E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE32CAD18D74C2A0021F33E /* PBXTargetDependency */,
+			);
+			name = cxx11testsTests;
+			productName = cxx11testsTests;
+			productReference = CDE32CA718D74C2A0021F33E /* cxx11testsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDE32C8418D74C2A0021F33E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Mattias Bergbom";
+				TargetAttributes = {
+					CDE32CA618D74C2A0021F33E = {
+						TestTargetID = CDE32C8B18D74C2A0021F33E;
+					};
+				};
+			};
+			buildConfigurationList = CDE32C8718D74C2A0021F33E /* Build configuration list for PBXProject "cxx11tests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CDE32C8318D74C2A0021F33E;
+			productRefGroup = CDE32C8D18D74C2A0021F33E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDE32C8B18D74C2A0021F33E /* cxx11tests */,
+				CDE32CA618D74C2A0021F33E /* cxx11testsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDE32C8A18D74C2A0021F33E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE32C9A18D74C2A0021F33E /* InfoPlist.strings in Resources */,
+				CDE32CA218D74C2A0021F33E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE32CA518D74C2A0021F33E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE32CB318D74C2A0021F33E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDE32C8818D74C2A0021F33E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE32D9318D752510021F33E /* alias-templates.cpp in Sources */,
+				CDE32D9418D752510021F33E /* alignas-size.cpp in Sources */,
+				CDE32D9518D752510021F33E /* alignas-type.cpp in Sources */,
+				CDE32D9618D752510021F33E /* alignof.cpp in Sources */,
+				CDE32D9718D752510021F33E /* auto-return-type.cpp in Sources */,
+				CDE32D9818D752510021F33E /* auto-variable-literals.cpp in Sources */,
+				CDE32D9918D752510021F33E /* constexpr-float-array.cpp in Sources */,
+				CDE32D9A18D752510021F33E /* constexpr-initialize-const.cpp in Sources */,
+				CDE32D9B18D752510021F33E /* constexpr-template-parameter.cpp in Sources */,
+				CDE32D9C18D752510021F33E /* constructors-delegating.cpp in Sources */,
+				CDE32D9D18D752510021F33E /* constructors-inheriting.cpp in Sources */,
+				CDE32D9E18D752510021F33E /* decltype.cpp in Sources */,
+				CDE32D9F18D752510021F33E /* default-member-functions.cpp in Sources */,
+				CDE32DA018D752510021F33E /* default-member-initialization.cpp in Sources */,
+				CDE32DA118D752510021F33E /* delete-functions.cpp in Sources */,
+				CDE32DA218D752510021F33E /* delete-member-functions.cpp in Sources */,
+				CDE32DA318D752510021F33E /* enum-class.cpp in Sources */,
+				CDE32DA418D752510021F33E /* enum-enhanced.cpp in Sources */,
+				CDE32DA518D752510021F33E /* enum-forward-declare.cpp in Sources */,
+				CDE32DA618D752510021F33E /* final-override.cpp in Sources */,
+				CDE32DA718D752510021F33E /* generalized-functors.cpp in Sources */,
+				CDE32DA818D752510021F33E /* include-array.cpp in Sources */,
+				CDE32DA918D752510021F33E /* include-chrono.cpp in Sources */,
+				CDE32DAA18D752510021F33E /* include-condition-variable.cpp in Sources */,
+				CDE32DAB18D752510021F33E /* include-forward-list.cpp in Sources */,
+				CDE32DAC18D752510021F33E /* include-functional.cpp in Sources */,
+				CDE32DAD18D752520021F33E /* include-future.cpp in Sources */,
+				CDE32DAE18D752520021F33E /* include-initializer-list.cpp in Sources */,
+				CDE32DAF18D752520021F33E /* include-mutex.cpp in Sources */,
+				CDE32DB018D752520021F33E /* include-regex.cpp in Sources */,
+				CDE32DB118D752520021F33E /* include-thread.cpp in Sources */,
+				CDE32DB218D752520021F33E /* include-tuple.cpp in Sources */,
+				CDE32DB318D752520021F33E /* include-unordered-map.cpp in Sources */,
+				CDE32DB418D752520021F33E /* include-unordered-set.cpp in Sources */,
+				CDE32DB518D752520021F33E /* inline-namespaces.cpp in Sources */,
+				CDE32DB618D752520021F33E /* lambda-expressions-capture-reference.cpp in Sources */,
+				CDE32DB718D752520021F33E /* lambda-expressions-capture-value.cpp in Sources */,
+				CDE32DB818D752520021F33E /* lambda-expressions-function-pointer.cpp in Sources */,
+				CDE32DB918D752520021F33E /* lambda-expressions-general.cpp in Sources */,
+				CDE32DBA18D752520021F33E /* local-type-template-argument.cpp in Sources */,
+				CDE32DBB18D752520021F33E /* long-long.cpp in Sources */,
+				CDE32DBC18D752520021F33E /* nested-template-closer.cpp in Sources */,
+				CDE32DBD18D752520021F33E /* nullptr.cpp in Sources */,
+				CDE32DBE18D752520021F33E /* perfect-forwarding.cpp in Sources */,
+				CDE32DBF18D752520021F33E /* range-based-for.cpp in Sources */,
+				CDE32DC018D752520021F33E /* raw-string-literals.cpp in Sources */,
+				CDE32DC118D752520021F33E /* rvalue-references.cpp in Sources */,
+				CDE32DC218D752520021F33E /* shared-ptr.cpp in Sources */,
+				CDE32DC318D752520021F33E /* static-assertions.cpp in Sources */,
+				CDE32DC418D752520021F33E /* std-array.cpp in Sources */,
+				CDE32DC518D752520021F33E /* std-bind.cpp in Sources */,
+				CDE32DC618D752520021F33E /* std-move.cpp in Sources */,
+				CDE32DC718D752520021F33E /* std-vector-features.cpp in Sources */,
+				CDE32DC818D752520021F33E /* trailing-return-type.cpp in Sources */,
+				CDE32DC918D752520021F33E /* tuples.cpp in Sources */,
+				CDE32DCA18D752520021F33E /* unicode-char-types.cpp in Sources */,
+				CDE32DCB18D752520021F33E /* unicode-string-literals.cpp in Sources */,
+				CDE32DCC18D752520021F33E /* unicode-string-typedefs.cpp in Sources */,
+				CDE32DCD18D752520021F33E /* uniform-initialization-heap-arrays.cpp in Sources */,
+				CDE32DCE18D752520021F33E /* uniform-initialization-implicit-ctor.cpp in Sources */,
+				CDE32DCF18D752520021F33E /* uniform-initialization-initializer-list.cpp in Sources */,
+				CDE32DD018D752520021F33E /* uniform-initialization-stack-arrays.cpp in Sources */,
+				CDE32DD118D752520021F33E /* uniform-initialization-too-few-initializers.cpp in Sources */,
+				CDE32DD218D752520021F33E /* uniform-initialization-variables.cpp in Sources */,
+				CDE32DD318D752520021F33E /* uniform-initialization-vectors.cpp in Sources */,
+				CDE32DD418D752520021F33E /* unique-ptr.cpp in Sources */,
+				CDE32DD518D752520021F33E /* using-as-typedef.cpp in Sources */,
+				CDE32DD618D752520021F33E /* vararg-macros.cpp in Sources */,
+				CDE32DD718D752520021F33E /* variadic-sizeof.cpp in Sources */,
+				CDE32DD818D752520021F33E /* variadic-templates.cpp in Sources */,
+				CDE32DD918D752520021F33E /* weak-ptr.cpp in Sources */,
+				CDE32C9C18D74C2A0021F33E /* main.m in Sources */,
+				CDE32CA018D74C2A0021F33E /* SPAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE32CA318D74C2A0021F33E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE32CB518D74C2A0021F33E /* cxx11testsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDE32CAD18D74C2A0021F33E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE32C8B18D74C2A0021F33E /* cxx11tests */;
+			targetProxy = CDE32CAC18D74C2A0021F33E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDE32C9818D74C2A0021F33E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE32C9918D74C2A0021F33E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CDE32CB118D74C2A0021F33E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE32CB218D74C2A0021F33E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDE32CB618D74C2A0021F33E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDE32CB718D74C2A0021F33E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDE32CB918D74C2A0021F33E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cxx11tests/cxx11tests-Prefix.pch";
+				INFOPLIST_FILE = "cxx11tests/cxx11tests-Info.plist";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CDE32CBA18D74C2A0021F33E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cxx11tests/cxx11tests-Prefix.pch";
+				INFOPLIST_FILE = "cxx11tests/cxx11tests-Info.plist";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CDE32CBC18D74C2A0021F33E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cxx11tests.app/cxx11tests";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cxx11tests/cxx11tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "cxx11testsTests/cxx11testsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CDE32CBD18D74C2A0021F33E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cxx11tests.app/cxx11tests";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cxx11tests/cxx11tests-Prefix.pch";
+				INFOPLIST_FILE = "cxx11testsTests/cxx11testsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDE32C8718D74C2A0021F33E /* Build configuration list for PBXProject "cxx11tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE32CB618D74C2A0021F33E /* Debug */,
+				CDE32CB718D74C2A0021F33E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE32CB818D74C2A0021F33E /* Build configuration list for PBXNativeTarget "cxx11tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE32CB918D74C2A0021F33E /* Debug */,
+				CDE32CBA18D74C2A0021F33E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE32CBB18D74C2A0021F33E /* Build configuration list for PBXNativeTarget "cxx11testsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE32CBC18D74C2A0021F33E /* Debug */,
+				CDE32CBD18D74C2A0021F33E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDE32C8418D74C2A0021F33E /* Project object */;
+}

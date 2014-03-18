@@ -17,3 +17,6 @@ build
 
 # Auto-generated Makefile
 Makefile
+
+# Xcode stuff
+xcuserdata
