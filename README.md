@@ -100,6 +100,11 @@ configure as
 You may also run the configure script from another directory (out-of-source
 tests).
 
+You can also provide the compiler name and flags via commandline
+arguments. Simply replace the above by
+
+    ./configure.py --cxx=g++ --cxxflags="-std=c++11"
+
 After running the configure script, you can run the tests using `make`. By
 default, all tests are run. To start them, just execute
 
