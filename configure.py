@@ -4,6 +4,14 @@ import os
 import shutil
 import sys
 import unittest
+
+OS_DATA={'darwin':{'NACL_OS':'mac','NACL_BIN':'bin'},
+         'linux2':{'NACL_OS':'linux','NACL_BIN':'bin64'}}
+PRESETS = {'pnacl':['$NACL_SDK_ROOT/toolchain/%(NACL_OS)s_pnacl/%(NACL_BIN)s/pnacl-clang++','-std=c++11'],
+           'clang':['clang++',''],
+           'clang-11':['clang++','-std=c++11'],
+           'gcc':['gcc++',''],
+           'gcc-11':['gcc++','-std=c++11'] }
 try:
     from shlex import quote
 except ImportError:
@@ -39,16 +47,39 @@ def setupArgparser():
                          metavar = "COMPILER_FLAGS",
                          help = "Compiler flags, provided verbatim to the compiler." )
 
+    parser.add_argument( "-p", "--preset",
+                         dest = "preset",
+                         action = "store", 
+                         default = None,
+                         type = str,
+                         metavar = "PRESET",
+                         help = "Optionally, a preset which overrides the compiler and compiler-flags arguments. Available: %s" % ', '.join( PRESETS.keys() ) )
+
     return parser
 
 def main():
+    if not sys.platform in OS_DATA.keys():
+        raise RuntimeError,'Unsupported platform: %s. (Supported platforms are %s)' % ( sys.platform, ', '.join( OS_DATA.keys() ) )
+    
     # parse commandline 
     parser = setupArgparser()
     args = parser.parse_args()
 
     root_dir = os.path.dirname( os.path.realpath( __file__ ) )
     src_dir = os.path.join( root_dir, 'src' )
-    m = MakefileGen( root_dir, src_dir, 'build', 'cpp', args.compiler, args.compiler_flags )
+
+    if args.preset:
+        if args.preset not in PRESETS.keys():
+            raise RuntimeError,'%s is not a valid preset (available presets: %s)' % ( args.preset,
+                                                                         ', '.join( PRESETS.keys() ) )
+        print("Using preset: %s" % args.preset )
+        m = MakefileGen( root_dir, src_dir, 'build', 'cpp',
+                         os.path.expandvars( PRESETS[args.preset][0] % OS_DATA[sys.platform] ),
+                         os.path.expandvars( PRESETS[args.preset][1] % OS_DATA[sys.platform] )
+                         )
+    else:
+        m = MakefileGen( root_dir, src_dir, 'build', 'cpp', args.compiler, args.compiler_flags )
+
     m.generate()
     return 0
 
@@ -72,6 +103,8 @@ class MakefileGen:
         self.makefile_targets = []
         self.makefile_footer = []
 
+        print("Commandline: %s %s" % ( self.compiler or '', self.compiler_flags or '' ) )
+        
     def generate(self):
         self.clean_build_directory()
         self.scan_source_directory()
