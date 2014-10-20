@@ -7,7 +7,7 @@ import unittest
 
 OS_DATA={'darwin':{'NACL_OS':'mac','NACL_BIN':'bin'},
          'linux2':{'NACL_OS':'linux','NACL_BIN':'bin64'}}
-PRESETS = {'pnacl':['$NACL_SDK_ROOT/toolchain/%(NACL_OS)s_pnacl/%(NACL_BIN)s/pnacl-clang++','-std=c++11'],
+PRESETS = {'pnacl':['$NACL_SDK_ROOT/toolchain/%(NACL_OS)s_pnacl/%(NACL_BIN)s/pnacl-clang++','-std=gnu++11'],
            'clang':['clang++',''],
            'clang-11':['clang++','-std=c++11'],
            'gcc':['gcc++',''],
