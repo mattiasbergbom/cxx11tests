@@ -4,14 +4,21 @@ import os
 import shutil
 import sys
 import unittest
+import platform
 
-OS_DATA={'darwin':{'NACL_OS':'mac','NACL_BIN':'bin'},
-         'linux2':{'NACL_OS':'linux','NACL_BIN':'bin64'}}
+IS64 = sys.maxsize > 2**32
+OS_DATA = {'darwin':{'NACL_OS':'mac','NACL_BIN':'bin',
+                     'ANDROID_OS':'darwin',
+                     'ARCH':platform.machine()},
+           'linux2':{'NACL_OS':'linux','NACL_BIN':'bin%s' % ( '64' if IS64 else '' ),
+                     'ANDROID_OS':'linux',
+                     'ARCH':platform.machine()}}
 PRESETS = {'pnacl':['$NACL_SDK_ROOT/toolchain/%(NACL_OS)s_pnacl/%(NACL_BIN)s/pnacl-clang++','-std=gnu++11'],
            'clang':['clang++',''],
            'clang-11':['clang++','-std=c++11'],
            'gcc':['g++',''],
-           'gcc-11':['g++','-std=c++11'] }
+           'gcc-11':['g++','-std=c++11'],
+           'android':['$NDK_ROOT/toolchains/llvm-3.4/prebuilt/%(ANDROID_OS)s-%(ARCH)s/bin/clang++','-std=gnu++11 -I $NDK_ROOT/sources/cxx-stl/llvm-libc++/libcxx/include'],}
 try:
     from shlex import quote
 except ImportError:
