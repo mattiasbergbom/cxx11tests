@@ -10,8 +10,8 @@ OS_DATA={'darwin':{'NACL_OS':'mac','NACL_BIN':'bin'},
 PRESETS = {'pnacl':['$NACL_SDK_ROOT/toolchain/%(NACL_OS)s_pnacl/%(NACL_BIN)s/pnacl-clang++','-std=gnu++11'],
            'clang':['clang++',''],
            'clang-11':['clang++','-std=c++11'],
-           'gcc':['gcc++',''],
-           'gcc-11':['gcc++','-std=c++11'] }
+           'gcc':['g++',''],
+           'gcc-11':['g++','-std=c++11'] }
 try:
     from shlex import quote
 except ImportError:
